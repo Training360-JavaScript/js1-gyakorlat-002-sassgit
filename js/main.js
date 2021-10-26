@@ -4,3 +4,5 @@
 - A függvény neve `generateList` legyen!
 - A HTML-template egy lista, amelynek a listaelemei a kapott tömb értékeit tartalmazzák.
 */
+
+const generateList = arrayOfStrings => arrayOfStrings.reduce((template, item) => template += `<li>${item}</li>`, '<ul>') + '</ul>';
