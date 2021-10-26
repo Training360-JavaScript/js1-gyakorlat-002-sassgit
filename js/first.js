@@ -4,3 +4,5 @@
 - A függvény szorozza meg a tömbelemek értékét 1.27-tel, majd pedig 
 __térjen vissza__ az elemek egész számra kerekített összegével!
 */
+
+const brutto = arrayOfIntegers => Math.round(arrayOfIntegers.reduce((sum, number) => sum += Math.round(number * 1.27), 0));
